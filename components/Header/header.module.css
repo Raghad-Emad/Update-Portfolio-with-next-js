@@ -1,0 +1,144 @@
+.header {
+  width: 100%;
+  height: 80px;
+  line-height: 80px;
+}
+
+.nav__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo h1 {
+  font-size: 2rem;
+  margin-bottom: 0;
+  color: #c7bcab;
+}
+
+.logo h1 span {
+  color: #579BB1;
+}
+
+.nav__menu {
+  display: flex;
+  align-items: center;
+  column-gap: 2.8rem;
+}
+
+.nav__menu a {
+  color: #c7bcab;
+  font-weight: 500;
+  font-size: 1rem;
+  text-decoration: none;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.nav__menu a:hover {
+  color: #579BB1;
+}
+
+.nav__menu a:first-child {
+  color: #579BB1;
+}
+
+/* .nav__right p {
+  color: #01d293;
+  margin-left: 20px;
+  position: relative;
+} */
+.nav__right i {
+  color: #808dad;
+}
+
+.nav__right p::before {
+  content: "";
+  position: absolute;
+  top: 25%;
+  left: -20px;
+  width: 1px;
+  height: 14px;
+  background: #808dad;
+  color: #808dad;
+}
+
+.header__shrink {
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 80px;
+  line-height: 80px;
+  box-shadow: 5px 5px 15px -5px #C7BCAB !important;
+  z-index: 9999;
+}
+
+.mobile__menu i {
+  font-size: 1.3rem;
+  color: #808dad;
+  cursor: pointer;
+}
+
+.mobile__menu {
+  display: none;
+  transition: 0.5s ease !important;
+}
+
+/* ========== make it responsive ========= */
+
+@media only screen and (max-width: 992px) {
+  .navigation {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #171f3897;
+    z-index: 99999;
+    display: none;
+  }
+
+  .header {
+    height: 70px;
+    line-height: 60px;
+  }
+
+  .nav__menu {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 300px;
+    height: 100%;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .nav__right {
+    display: none;
+  }
+
+  .mobile__menu {
+    display: block !important;
+    transition: 0.7s ease !important;
+  }
+
+  .mobile__menu i {
+    transition: 0.7s ease !important; 
+  }
+
+  .menu__active {
+    display: block !important;
+  }
+
+  .logo h1 {
+    font-size: 1.3rem !important;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .header {
+    height: 70px;
+    line-height: 60px;
+  }
+}

@@ -1,0 +1,106 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap");
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Quicksand", sans-serif;
+  scroll-behavior: smooth !important;
+}
+
+a {
+  color: unset;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+  background: #F8F4EA;
+}
+
+p {
+  color: #808dad;
+  line-height: 30px;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #0A2647;
+}
+
+h2 {
+  font-size: 2.5rem !important;
+}
+
+section {
+  padding-top: 150px;
+}
+
+footer {
+  padding-bottom: 10px;
+  padding-top: 40px;
+  border-top: 1px solid #579BB1;
+}
+
+.primary__btn {
+  background: #579BB1 !important;
+  padding: 7px 25px !important;
+  border: 1px solid #62B6B7 !important;
+  border-radius: 5px;
+}
+
+.primary__btn a {
+  text-decoration: none;
+  color: #F8F4EA;
+  background: transparent !important;
+}
+
+.secondary__btn {
+  background: transparent;
+  border: none;
+  outline: none;
+  padding: 7px 25px;
+}
+
+.secondary__btn a {
+  color: #F8F4EA !important;
+}
+.primary__btn a:hover,
+.secondary__btn a:hover {
+  color: #0A2647;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  background: #ECE8DD;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 2em;
+  background: #171f38;
+}
+
+@media only screen and (max-width: 992px) {
+  p {
+    font-size: 0.9rem !important;
+  }
+
+  .primary__btn a,
+  .secondary__btn a {
+    font-size: 0.9rem;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  section {
+    padding-top: 110px;
+  }
+
+  footer {
+    padding-top: 0;
+    border: none;
+  }
+}
